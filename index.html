@@ -2,53 +2,51 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meggna Karthikeyan Portfolio</title>
-    
-    <!-- ✅ Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet" />
-    
-    <!-- ✅ Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- ✅ Inline Tailwind Config (this overrides your external tailwind.config.js which doesn't work with CDN) -->
-    <script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meggna Karthikeyan Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Inline Tailwind Config -->
+  <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            outfit: ["Outfit", "sans-serif"],
-            ovo: ["Ovo", "serif"]
+            outfit: ['Outfit', 'sans-serif'],
+            ovo: ['Ovo', 'serif']
           },
           gridTemplateColumns: {
-            auto: "repeat(auto-fit, minmax(200px, 1fr))"
+            auto: 'repeat(auto-fit, minmax(200px, 1fr))'
           },
           animation: {
-            spin_slow: "spin 6s linear infinite"
+            spin_slow: 'spin 6s linear infinite'
           },
           colors: {
-            lightHover: "#fcf4ff",
-            darkHover: "#2a004a",
-            darkTheme: "#11001F"
+            lightHover: '#fcf4ff',
+            darkHover: '#2a004a',
+            darkTheme: '#11001F'
           },
           boxShadow: {
-            black: "4px 4px 0 #000",
-            white: "4px 4px 0 #fff"
+            black: '4px 4px 0 #000',
+            white: '4px 4px 0 #fff'
           }
         }
       },
-      darkMode: "selector"
+      darkMode: 'selector'
     };
-    </script>
-    
-    <!-- ✅ Alpine.js (optional, used for interactivity) -->
-    <script src="//unpkg.com/alpinejs" defer></script>
+  </script>
+
+  <!-- Alpine.js (optional) -->
+  <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-
-
 
 <body class="overflow-x-hidden font-outfit leading-8 dark:bg-darkTheme dark:text-white">
 
